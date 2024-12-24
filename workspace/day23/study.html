@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지와 하이퍼링크 걸어보기</title>
+</head>
+<body>
+  <a href="http://www.google.com" target="_self">구글 바로가기<br>
+    <img src="./img/snowman.jpg" alt="눈사람사진" width = "150" height="170">
+    <img src="./img/snowman.jpg" alt="눈사람사진" width = "200" height="170">
+  </a>
+  <br>
+  <i><em>배지수</em></i>
+  <br>
+  <p><i><strong>나는 배지수</i></strong></p>
+
+  <h1>목록 만들기</h1>
+  <ul type="circle">
+    <li>배</li>
+    <ul type="square">
+      <li>지</li>
+      <ul type="square">
+        <li>수</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <ol type="1" start="100">
+    <li>html
+      <ol type="1" start="150">
+        <li>css</li>
+        <li>하이</li>
+      </ol>
+    </li>
+  </ol>
+
+  <h1>테이블태그</h1>
+  <table border="1" cellspacing="0" width="500px" height="300px" style="text-align:center; background-color: yellow;">
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>과목</th>
+        <th colspan="2">점수</th>
+        <!-- <th>비고</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">배지수</td>
+        <td>html</td>
+        <td>100</td>
+        <td rowspan="2">없음</td>
+      </tr>
+      <tr>
+
+        <td>css</td>
+        <td>100</td>
+        
+      </tr>
+    </tbody>
+  </table>  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLY2Yx3oGtUKNH7Yw51BilQt-3x_fl50K5IiEz0Qc5_hvnndiEhuQ8gagSkk6Q1z7mkVd72HBcijoj21wrbq5flOswigYriRYNzG6bmyGL1g" alt="강아지사진">
+  <h1>배지수</h1>
+</body>
+</html>
