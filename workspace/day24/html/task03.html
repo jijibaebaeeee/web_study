@@ -1,0 +1,67 @@
+<!-- 3번문제-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .header{
+      background-color: black;
+      height:70px;
+    }  
+
+    .footer{
+      background-color: black;
+      height:70px;
+    }
+    .section-container{
+      /* display: flex; */
+      height: 300px;
+      /* justify-content: space-around; */
+    }
+
+    .upside{
+      background-color: cadetblue;
+      width: 100%;
+      color:white;
+      padding-left : 20px;
+    }
+
+    .section{
+      background-color: bisque;
+      height:100%;
+    }
+
+    .main{
+      height:600px;
+    }
+
+    
+
+  </style>
+
+</head>
+<body>
+<!--div.main-container>div.{}*3-->
+  <div class="main">
+    <div class="header"></div>
+    <!-- header, footer 높이 : 100px
+    main 높이 : 500px aside 너비 : 150px 나머지 section-->
+    <div class="section-container">
+      <div class="upside">
+        <ul style="word-spacing: 20px;">
+          <span><strong>HOME</strong></span>
+          <span><strong>상품목록</strong></span>
+          <span><strong>상품등록</strong></span>
+          <span><strong>주문내역</strong></span>
+          <span><strong>회원정보</strong></span>
+        </ul>
+      </div>
+      <div class="section"></div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>

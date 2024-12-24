@@ -1,0 +1,68 @@
+<!-- 2번 : 입력태그-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 정보 입력받기</title>
+</head>
+<body>
+  <h1>사용자 정보 입력</h1>
+  <form>
+    <fieldset>
+      <label for="name">이름</label>
+      <input type="text" id="name" autofocus><br>
+      <label for="age">나이</label>
+      <input type="number" id="age" value="5" readonly><br> <!--여기에서 value는 기본값으로 들어가있는 값-->
+      <label for="id">나이</label>
+      <input type="number" id="id" placeholder="아이디를 입력하세요" required><br> <!--placeholder : 힌트-->
+      <label for="pw">나이</label>
+      <input type="number" id="pw" placeholder="8자리이상 대소문자포함" required><br> <!-- required : 필수 입력 요구-->
+    </fieldset>
+    <fieldset>
+    <legend>취미</legend>
+      <label for="hobby1">독서</label>
+      <input type="radio" id="hobby1" name="hobby">
+      <label for="hobby2">여행</label>
+      <input type="radio" id="hobby2" name="hobby" checked> <!-- 라디오 타입이면 checked 한번만 가능-->
+      <label for="hobby3">게임</label>
+      <input type="radio" id="hobby3" name="hobby"> <!-- name 속성으로 묶어서 하나의 선택만 가능하게. id속성은 모두 달라야한다-->
+    </fieldset>
+    <fieldset>
+      <legend>과일선택</legend>
+      <label for="apple">사과</label>
+      <input type="checkbox" id="apple" name="fruit" value="apple"> <!-- 서버에 apple 이라는 value 값으로 전송된다-->
+      <label for="banana">바나나</label>
+      <input type="checkbox" id="banana" name="fruit" checked>
+      <label for="orange">오렌지</label>
+      <input type="checkbox" id="orange" name="fruit">
+    </fieldset>
+    <fieldset>
+      <legend>추가정보</legend>
+      <label for="date">생년월일</label>
+      <input type="date" id="date"><br>
+
+      <label for="country">국가 선택</label>
+      <select id="country" name="country">
+        <option value="etc">국가선택</option>
+        <option value="kr">한국</option>
+        <option value="us">미국</option>
+        <option value="jp">일본</option>
+        <option value="ch">중국</option>
+      </select><br>
+
+      <label for="file">프로필 사진 업로드</label><br>
+      <input type="file" id="file">
+    </fieldset>
+    <fieldset>
+      <legend>추가 의견</legend>
+        <label for="comments">의견을 작성해 주세요</label> <br>
+        <textarea id="comments" cols="50" rows="5" placeholder="의견을 작성하세요"></textarea> <!-- rows = 줄의 수 -->
+    </fieldset>
+
+
+    <button type="submit">버튼</button>
+    <input type="submit" value="보내기">
+  </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- 1번문제-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .header{
+      background-color: beige;
+      height:100px;
+    }  
+
+    .footer{
+      background-color: beige;
+      height:100px;
+    }
+    .section-container{
+      display: flex;
+      height: 300px;
+      /* justify-content: space-around; */
+    }
+
+    .aside{
+      background-color: purple;
+      width: 150px;
+    }
+
+    .section{
+      background-color: brown;
+      width: 100%;
+    }
+
+    .main{
+      height:500px;
+    }
+
+  </style>
+
+</head>
+<body>
+<!--div.main-container>div.{}*3-->
+  <div class="main">
+    <div class="header">header</div>
+    <!-- header, footer 높이 : 100px
+    main 높이 : 500px aside 너비 : 150px 나머지 section-->
+    <div class="section-container">
+      <div class="aside">aside</div>
+      <div class="section">section</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
