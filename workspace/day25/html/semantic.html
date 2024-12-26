@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>semantic</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    
+    header{
+      height:100px;
+      background-color: tomato;
+      color:white;
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header--text-box{
+      height:50px;
+    }
+
+    nav{
+      height: 50px;
+      background-color: darkblue;
+      font-size: 20px;
+      width:100%;
+
+    }
+    ul{
+      display: flex;
+      list-style-type: none; /*점 빼기*/
+    }
+    li{
+      /* border: 1px solid white; */
+      margin: 0 10px; /*상하 좌우*/
+      line-height: 50px;
+    }
+    
+    .main-container{
+      border: 1px solid black;
+      background-color: yellow;
+      height: 500px;
+      display: flex;
+    }
+
+    aside{
+      background-color: brown;
+      height: 100%;
+      width: 200px;
+      color: white;
+      font-size:30px;
+      display: flex;
+    }
+    .aside--text-box{
+      margin: auto;
+    }
+
+    main{
+      height: 100%;
+      width: 100%;
+      background-color: greenyellow;
+      color:white;
+      font-size:30px;
+    }
+    
+    section{
+      background-color: blueviolet;
+      margin: 20px auto;
+    }
+
+    .section01{
+      width: 40%;
+      height: 30%;
+    }
+
+    article{
+      background-color: aqua;
+      margin: auto;
+      display:flex;
+      justify-content: center; /*가운데로 정렬?*/
+      align-items: center;
+    }
+
+    .section01.article{
+      height: 20%;
+    }
+
+    .section01--article-container{
+      display:flex;
+      width: 100%;
+      height: 80%;
+    }
+
+    .section01--article{
+      width: 100px;
+      height: 80px;
+    }
+
+    .section02--article-container{
+      display:flex;
+      width:100%;
+      height:80px;
+      flex-wrap: wrap;
+    }
+
+    .section02--article{
+      width:100px;
+      height:90px;
+    }
+  </style>
+</head>
+<body>
+  <header> <!--헤더 시작 영역-->
+    <div class="header--text-box">header</div>
+    <nav>
+      <ul>
+        <li>nav 메뉴1</li>
+        <li>nav 메뉴2</li>
+        <li>nav 메뉴3</li>
+        <li>nav 메뉴4</li>
+      </ul>
+    </nav>
+  </header> <!--헤더 끝 영역-->
+  <div class="main-container"> <!--main 컨테이너 시작영역-->
+    <aside> <!-- aside 시작 영역-->
+      <div class="aside--text-box">aside</div>
+    </aside> <!-- aside 끝 영역-->
+    <!-------------------------------------------------------------------------------------------------->
+    <main> <!--main 시작영역-->
+      <div class="main--text-box">main</div>
+      <section class="section01"> <!-- section 시작 영역 -->
+        <div class="section01--text-box">section</div>
+        <div class="section01--article-container"> 
+          <article class="section01--article">
+            <div class="article--text-box">article</div>
+          </article>
+          <article class="section01--article">
+            <div class="article--text-box">article</div>
+          </article>
+          <article class="section01--article">
+            <div class="article--text-box">article</div>
+          </article>
+        </div>
+      </section> <!-- section 끝 영역 -->
+      <section class="section02">
+        <div class="section02--text-box">section</div>
+        <div class="section02--article-container">
+          <article class="section02--article">
+            <div class="article02--text-box">article</div>
+          </article>
+          <article class="section02--article">
+            <div class="article02--text-box">article</div>
+          </article>
+          <article class="section02--article">
+            <div class="article02--text-box">article</div>
+          </article>
+          <article class="section02--article">
+            <div class="article02--text-box">article</div>
+          </article>
+        </div>
+      </section>
+    </main> <!--main 끝영역-->
+  </div> <!--main 컨테이너 시작영역-->
+</body>
+</html>
