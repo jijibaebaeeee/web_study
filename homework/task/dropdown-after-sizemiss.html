@@ -1,0 +1,110 @@
+<!--이 코드는 menu1 hover시 색이 li의 content에만 채워지는 문제가 발생함-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown 메뉴 만들기</title>
+  <style>
+    * {
+      margin:0;
+      padding:0; 
+    }
+    header {
+      width: 100%;
+      height: 100px;
+      font: bold 15px "sans-serif";
+      
+    }
+    ul > li{
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .header-blank {
+      width:100%;
+      height:40%;
+      background-color: aqua;
+    }
+    header > nav {
+      display:flex;
+      height:60%;
+      line-height:60px;
+    }
+    .home {
+      width: 10%;
+      height: 100%;
+      background-color: orange;
+      color: white;
+      line-height:60px;
+      text-align: center;
+    }
+    .nav_items {
+      width:100%;
+      height: 100%;
+      background-color: blue;
+    }
+    .nav_items > ul {
+      display:flex;
+      width: 30%;
+      justify-content: space-around;
+    }
+    .nav_items > ul > li {
+      text-align:center;
+      position: relative;
+    }
+    .nav_items > ul > li > ul {
+      display: none;
+      position: absolute;
+      left: 0;
+    }
+    .nav_items > ul > li:hover {
+      background-color: orange;
+    }
+
+    .nav_items > ul > li:hover > ul {
+      display: block;
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-blank"></div>
+    <nav>
+      <div class="nav_items">
+        <ul>
+          <li><a href="/">Meun1</a>
+            <ul>
+              <li><a href="/">Menu1-1</a></li>
+              <li><a href="/">Menu1-2</a></li>
+              <li><a href="/">Menu1-3</a></li>
+              <li><a href="/">Menu1-4</a></li>
+            </ul>
+          </li>
+          <li><a href="/">Meun2</a>
+            <ul>
+              <li><a href="/">Menu2-1</a></li>
+              <li><a href="/">Menu2-2</a></li>
+              <li><a href="/">Menu2-3</a></li>
+              <li><a href="/">Menu2-4</a></li>
+            </ul>
+          </li>
+          <li><a href="/">Meun3</a>
+            <ul>
+              <li><a href="/">Menu3-1</a></li>
+              <li><a href="/">Menu3-2</a></li>
+              <li><a href="/">Menu3-3</a></li>
+            </ul>
+          </li>
+          <li><a href="/">Meun4</a></li>
+        </ul>
+      </div>
+      <div class="home">home</div>
+    </nav>
+  </header>
+</body>
+</html>
