@@ -1,0 +1,76 @@
+<!-- 	
+- 아래의 모든 요구사항을 확인하고, 화면 캡처와 함께 압축파일을 첨부하세요.
+- 폴더명 본인이름으로 만들고 html파일, img폴더, 화면캡처 2개을 본인이름.zip 파일로 첨부하세요.
+- 최종 압축 폴더에 있는 파일 1번문제 , 2번문제의 폴더와 파일들이 모두 있어야 함(누락시 감점있음)
+ 
+[기본요구사항]
+
+- 이미지 파일은 반드시 img 폴더 안에 사진이 저장되어있어야 한다. O 
+- 이미지 태그에는 반드시 alt 속성을 지정하고 해당 사진의 설명을 작성하세요. O
+- 화면에 나온 경로, 타이틀 등 모두 동일해야합니다. O
+- HTML 기본 문법 규칙을 준수하세요.(태그 위치, 들여쓰기 등)
+ 
+
+1. 아래 요구사항을 잘 확인하고 결과화면과 동일하도록 구현하세요.
+[요구사항]
+① 북마크 이름 : "애완동물 목록"을 화면 상단에 표시하세요. O
+- 표는 종류, 사진, 이름 열과 고양이, 수달, 강아지 행으로 구성된다. O
+- 사진 열에 이미지를 삽입하고, 이미지는 300px 너비와 220px 높이로 설정한다. O
+- 종류와 이름 열에는 각각 텍스트로 정보를 입력한다. O
+- 고양이와 수달의 이미지는 클릭 시 위키백과 페이지가 새 탭에서 열리도록 설정한다. O
+표의 테두리 두께는 1px로 설정하고, 셀 간 간격(cellspacing)은 0px으로 설정한다. O
+ 
+② 다른 유용한 링크라는 제목 아래에 3개의 링크를 추가하세요.
+- 네이버
+- 구글
+- 유튜브(새 탭에서 열리도록 설정) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>능단평3 1번문제 배지수</title>
+</head>
+<body>
+  <h1>애완동물 목록</h1>
+  <table border="1" cellspacing="0">
+    <thead>
+      <tr>
+        <th>종류</th>
+        <th>사진</th>
+        <th>이름</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>고양이</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%96%91%EC%9D%B4" target="_blank">
+          <img src="img/고양이.jpg" alt="귀여운 고양이사진" width="300px" height="220px">
+        </a></td>
+        <td>냥냥이</td>
+      </tr>
+      <tr>
+        <td>수달</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EC%88%98%EB%8B%AC" target="_blank">
+          <img src="img/수달.jpg" alt="귀여운 수달사진" width="300px" height="220px">
+        </a></td>
+        <td>둘리</td>
+      </tr>
+      <tr>
+        <td>강아지</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EA%B0%95%EC%95%84%EC%A7%80">
+          <img src="img/강아지.jpg" alt="귀여운 강아지사진" width="300px" height="220px">
+        </a></td>
+        <td>멍멍이</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>다른 유용한 링크</h3>
+  <ul>
+    <li><a href="https://www.naver.com">네이버</a></li>
+    <li><a href="https://www.google.com">구글</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">유튜브</a></li>
+  </ul>
+</body>
+</html>
